@@ -11,9 +11,9 @@ int main()
     student person;
     
     cout<<"What is the student's name? ";
-    cin>>firstName>>lastName;
+    cin >> firstName >> lastName;
     
-    person.setName(firstName,lastName);
+    person.setName( firstName, lastName );
     
     double grade, score;
     do
@@ -26,9 +26,9 @@ int main()
         }
     }while( grade != -1 );
     
-    score = person.getScore();
+    score = person.getScore(); // average is returned and assinged to score variable. 
     
-    cout<<person.fullName()<<"'s Course grade is: "<<score<<endl;
+    cout << person.fullName() << "'s Course grade is: " << score << endl;
     
     return 0;
 }
